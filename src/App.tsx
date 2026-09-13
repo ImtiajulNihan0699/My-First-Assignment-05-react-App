@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Banner />
       <div className="flex justify-center py-2">
-        <div className="w-24 h-1 rounded-full bg-gradient-to-r from-orange-500 via-pink-500 to-violet-500"></div>
+        <div className="w-24 h-1 rounded-full bg-linear-to-r from-orange-500 via-pink-500 to-violet-500"></div>
       </div>
       <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
         <Technologies technologiesPromise={technologiesPromise} />
