@@ -66,6 +66,7 @@ I used it to show an empty message when no technology is selected:
     {/* Selected technologies */}
   </div>
 )}
+
 ## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
 A parent sends data to a child through props.
