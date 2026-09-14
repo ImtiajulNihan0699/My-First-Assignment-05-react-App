@@ -2,6 +2,8 @@ import { Suspense, useState } from "react";
 import Banner from "./Components/Banner"
 import Navbar from "./Components/Navbar"
 import Technologies from "./Components/Technologies";
+import Footer from "./Components/footer";
+
 
 const fetchTechnologies = async () => {
   const response = await fetch('/data.json');
@@ -22,6 +24,7 @@ function App() {
       <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
         <Technologies technologiesPromise={technologiesPromise} />
       </Suspense>
+      <Footer />
     </>
   )
 }

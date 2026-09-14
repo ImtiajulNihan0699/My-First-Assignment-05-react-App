@@ -14,9 +14,9 @@ function SelectedStack({ stack, setSelectedStack }: { stack: Itechnology[], setS
   return (
     <div className="border border-gray-200 rounded-2xl p-4 shadow-sm">
 
-      <div className="flex items-center justify-between mb-4">
+      <div>
         <h3 className="text-lg font-bold text-gray-900">Your Stack</h3>
-        <span className="text-sm text-pink-500 font-medium">{stack.length} Selected</span>
+        <span className="text-sm text-gray-400 font-medium">{stack.length} Technology Selected</span>
       </div>
 
       {stack.length === 0 ? (

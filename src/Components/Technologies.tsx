@@ -30,9 +30,6 @@ function Technologies({ technologiesPromise }: ItechnologiesProps) {
           ))}
         </div>
         <div className="col-span-1">
-          <p className="text-gray-400 text-base mb-3">
-            Selected Stack
-          </p>
           <SelectedStack stack={stack} setSelectedStack={setSelectedStack} />
         </div>
       </div>
