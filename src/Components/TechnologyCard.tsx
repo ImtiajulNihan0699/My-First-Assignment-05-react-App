@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import type { Itechnology } from './Type/Technologies'
 
 interface IProps {
@@ -9,13 +8,11 @@ interface IProps {
 
 const TechnologyCard = ({ technology, stack, setSelectedStack }: IProps) => {
   const { name, description, icon, category, difficulty, rating, badge } = technology
-  const [isAdded, setIsAdded] = useState<boolean>(false)
+  const isAdded = stack.some(tech => tech.id === technology.id)
 
   const handleAddToStack = () => {
     if (isAdded) return
-    const newStack = [...stack, technology]
-    setSelectedStack(newStack)
-    setIsAdded(true)
+    setSelectedStack([...stack, technology])
   }
 
   return (
