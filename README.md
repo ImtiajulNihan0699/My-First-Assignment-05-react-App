@@ -1,8 +1,8 @@
-# 🚀 DevStack
+# DevStack
 
 DevStack is a simple and interactive web application where users can explore different web development technologies and build their own technology stack.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - React
 - TypeScript
@@ -12,15 +12,15 @@ DevStack is a simple and interactive web application where users can explore dif
 - Vite
 - JSON
 
-## ✨ Features
+## Features
 
-### 1. 📚 Explore Technologies
+### 1. Explore Technologies
 Users can browse different development technologies with information such as category, difficulty level, rating, description, and badge.
 
-### 2. 🧩 Build Your Own Stack
+### 2. Building Your Stack
 Users can add technologies to their personal stack and easily see which technologies they have selected.
 
-### 3. 🗑️ Manage Your Stack
+### 3. Remove Your Stack
 Users can remove individual technologies or remove all selected technologies. Toast notifications are shown when technologies are added or removed.
 
 ---
