@@ -16,7 +16,7 @@ const TechnologyCard = ({ technology, stack, setSelectedStack }: IProps) => {
   }
 
   return (
-    <div className="bg-white border border-gray-100 rounded-2xl p-5 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow">
+    <div className={`bg-white border rounded-2xl p-5 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow ${ isAdded ? 'border-pink-500' : 'border-gray-100' }`} >
       <div className="flex items-start justify-between">
         <img src={icon} alt={name} className="w-12 h-12 object-contain" />
         <span className="text-sm font-medium bg-linear-to-r from-orange-500 via-pink-500 to-violet-500 bg-clip-text text-transparent">
