@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify'
 import type { Itechnology } from './Type/Technologies'
 
 interface IProps {
@@ -13,8 +14,8 @@ const TechnologyCard = ({ technology, stack, setSelectedStack }: IProps) => {
   const handleAddToStack = () => {
     if (isAdded) return
     setSelectedStack([...stack, technology])
-  }
-
+    toast.success(`${technology.name} added to your stack!`)
+  } 
   return (
     <div className={`bg-white border rounded-2xl p-5 flex flex-col gap-3 shadow-sm hover:shadow-md transition-shadow ${ isAdded ? 'border-pink-500' : 'border-gray-100' }`} >
       <div className="flex items-start justify-between">
