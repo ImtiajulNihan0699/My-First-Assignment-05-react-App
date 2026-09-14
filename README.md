@@ -41,7 +41,7 @@ JSX is a syntax that lets us write HTML-like code inside JavaScript or TypeScrip
 
 `useState` is used to create and manage changing data in a React component.
 
-In this project, I used `useState` to store the selected technologies and update the user's stack.
+In this project, I used `useState` to store the selected technologies and update **your stack**.
 
 ## 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
 
@@ -51,7 +51,7 @@ It can be used to load the technology data from the JSON file when the component
 
 ## 5. Why does every item in a `.map()` list need a unique `key` prop?
 
-React uses the `key` to identify each item in a list. A unique key helps React efficiently update the correct item when the list changes.
+React uses the `key` to identify each item in a list. A unique key helps React update the correct item when the list changes.
 
 ## 6. What is conditional rendering? Show one place you used it.
 
@@ -69,8 +69,6 @@ I used it to show an empty message when no technology is selected:
 
 ## 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
-A parent sends data to a child through props.
+A parent passes data to a child component through **props**.The parent can pass a **function** as a prop which is often called **lifting state up**,if the child needs to send data or trigger an action in the parent. 
+The child calls that function through an event, such as a button click.
 
-A child can send data back by calling a function that the parent passes to it through props.
-
-For example, I passed stack and setSelectedStack from the parent to the TechnologyCard component.
