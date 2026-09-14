@@ -25,7 +25,7 @@ Users can remove individual technologies or remove all selected technologies. To
 
 ---
 
-# ❓ React Questions & Answers
+# React Questions & Answers
 
 ## 1. What is JSX, and why is it used in React?
 
