@@ -1,14 +1,21 @@
 import { TbTrash } from 'react-icons/tb'
 import type { Itechnology } from './Type/Technologies'
+import { toast } from 'react-toastify'
 
 function SelectedStack({ stack, setSelectedStack }: { stack: Itechnology[], setSelectedStack: React.Dispatch<React.SetStateAction<Itechnology[]>> }) {
 
-  const handleRemove = (id: string) => {
+   const handleRemove = (id: string) => {
+
+    const removedTech = stack.find(tech => tech.id === id)
+
     setSelectedStack(stack.filter(tech => tech.id !== id))
+
+    toast.info(`${removedTech?.name} removed from your stack!`)
   }
 
   const handleRemoveAll = () => {
     setSelectedStack([])
+    toast.info('All technologies removed from your stack!')
   }
 
   return (
